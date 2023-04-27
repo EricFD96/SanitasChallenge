@@ -1,0 +1,7 @@
+{
+  "name": "SanitasChallenge",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
