@@ -2,6 +2,9 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
 import { HomePage } from './home.page';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 describe('HomePage', () => {
   let component: HomePage;
@@ -10,7 +13,7 @@ describe('HomePage', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [HomePage],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot(), HttpClientModule, FormsModule, ReactiveFormsModule, SharedModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(HomePage);

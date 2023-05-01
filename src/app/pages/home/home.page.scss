@@ -1,0 +1,12 @@
+ion-searchbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+ion-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

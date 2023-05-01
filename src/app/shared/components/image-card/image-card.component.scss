@@ -1,0 +1,10 @@
+ion-card {
+  margin-bottom: 1vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  ion-card {
+    width: 500px;
+  }
+}

@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center"> Images </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar animated="true" show-clear-button="focus" [formControl]="searchField"></ion-searchbar>
+  <ion-list *ngIf="imagesInfo$ | async as images; else loading">
+    <san-image-card *ngFor="let image of images" [image]="image"></san-image-card>
+  </ion-list>
+  <ng-template #loading class="flex-list">
+      <san-image-card-skeleton *ngFor="let item of [].constructor(6)"></san-image-card-skeleton>
+  </ng-template>
+</ion-content>
